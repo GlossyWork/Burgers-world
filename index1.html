@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Burgers!</title>
+  </head>
+  <body>
+    <!--<h1>Burgers World!</h1>
+    <style>
+        body{
+            background-color:darkseagreen;
+        }
+        p{
+            font-style: oblique;
+        }
+
+    </style>-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-up bg-dark">
+            <a class="navbar-brand" href="">Burger's World!!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse"> 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link">Home</a></li>
+                    <li class="nav-item"><a class="nav-link">Location</a></li>
+                </ul>
+                <form>
+                    <input>
+                    <button type="submit">Search</button>
+                    <!-- or we can write as 
+                        <input> <button type="submit"> Search</button>-->
+                </form>
+            </div>
+    </nav>
+     <header>
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img class="w-100"src="images/carousel1.jpg" alt="first slide">
+        <div class="carousel-caption">
+            <h5> Made our order</h5>
+            <p>Using only the finest ingrediets</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img class="w-100" src="images/carousel2.jpg" alt="second slide">
+        <div class="carousel-caption">
+           <h5> Over 50 types on our menu</h5>
+            <p>Or build on your own!</p>
+        </div>
+        </div>
+     <div class="carousel-item">
+     <img class="w-100" src="images/carousel3.jpg" alt="third slide">
+     <div class="carousel-caption">
+       <h5> Sit and Relax</h5>
+       <p>Family ambience</p>
+     </div>
+     </div>
+     <div class="carousel-item">
+     <img class="w-100" src="images/carousel4.jpg" alt="fourth slide">
+     <div class="carousel-caption">
+       <h5> Good looking</h5>
+       <p>With good surroundings!!</p>
+     </div>
+     </div>
+    <a href="#carouselControls" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span> Previous</span>
+    </a>
+    <a href="#carouselControls" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span>Next</span>
+    </a>
+    </div>
+    </div>
+   </header>
+        <div class="containter text-center py-5">
+        <div class="row">
+            <div class="col-md-4">
+            <img src="images/openimage.jpg" alt="openimage" class="rounded-circle">
+            <h4><i>"Newly opened but best experience"</i></h4><hr>
+             <p> Treat yourself next time you are in the area!</p>
+             <p><a class="btn btn-secondary" href="" role="button"> view details &raquo;</a></P>
+            </div>
+            <div class="col-md-4">
+            <img src="images/Burgerimage.jpg" alt="burger challenge" class="rounded-circle">
+            <h4><i> Fancy in challenges??</i></h4><hr>
+            <p>Why not to try one of our famous Burger eating challenges??</p>
+            <p><a class="btn btn-secondary" href="" role="button"> view details &raquo;</a></P>
+            </div>
+            <div class="col-md-4">
+            <img src="images/Est.jpg" alt="est" class="rounded-circle" >
+            <h4><i>Establishe in 2022</i></h4><hr>
+            <p>"Try our food, and u can feel the best taste"</p>
+            <p><a class="btn btn-secondary" href="" role="button"> view details &raquo;</a></P>
+            </div>
+        </div>
+     </div>
+   <div class="containter-fluid bg-dark">
+   <div class="row text-center">
+   <div class="col-md-7 text-light font-italic">
+    <P>Sign up for exclusive offers!!</P>
+   </div>
+   <div class="col-md-4">
+   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal">Sign up here!</button>
+   </div>
+   </div>
+   </div>
+   <!--modal-->
+   <div class="modal fade" id="modal">
+    <div class="modal-dialog">
+       <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title">Sign up for exclusive offers!!</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+        <form>
+        <div class="form group">
+            <label for="nameinput">Your name</label>
+            <input type="name" class="form-control" id="nameinput" placeholder="Enter your name">
+        </div>
+        <div class="form group">
+            <label for="emailinput">Your email</label>
+            <input type="email" class="form-control" id="emailinput" placeholder="Enter your Email">
+        </div>
+        <div class="form group">
+            <label for="address">Your address</label>
+            <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" ></textarea>
+        </div>
+    </form>
+        </div>
+        <div class="modal-footer justify-content-between">
+            <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="emailcheck" value="option1">
+            <label class="form-check-label" for="emailcheck">Contact by email</label>
+            </div>
+            <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-inline" id="postcheck" value="option1">    
+            <label class="form-check-label" for="postcheck">Contact by post</label>
+            
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+    
+     </div> 
+    </div>
+   </div>
+   <footer class="containter bg-light py-4">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2022 Burger world! &middot;
+    <a href="">Home</a> &middot;
+    <a href="">Locations</a>
+    </p>
+   </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
